@@ -1,22 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import MiComponente from "./MiComponente";
+import SegundoComponente from "./SegundoComponente";
+import { TercerComponente } from "./TercerComponente";
+import { EventosComponente } from "./EventosComponente";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>Primeros pasos en REACT 🫡 !!!!</p>
+        <div className="componentes">
+          <EventosComponente/ >
+          <hr/>
+          <TercerComponente nombre="Tony" apellidos="Vargas"/>
+          <hr/>
+          <SegundoComponente />
+          <hr />
+          <MiComponente />
+        </div>
       </header>
     </div>
   );
